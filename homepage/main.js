@@ -1,4 +1,4 @@
-const requestURL = "https://juarez18.github.io/wdd330/home-page/links.json";
+const requestURL = "/homepage/links.json";
 
 fetch(requestURL)
   .then(function (response) {
