@@ -1,4 +1,4 @@
-const requestURL = "/homepage/links.json";
+const requestURL = "homepage/links.json";
 
 fetch(requestURL)
   .then(function (response) {
