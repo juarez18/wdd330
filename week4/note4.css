@@ -1,0 +1,57 @@
+header h1{
+    text-align: center;
+    background-color: #7268A6;
+    padding: 15px;
+    margin: 0;
+}
+
+nav {
+    background-color: #86A3C3;
+    margin: 0;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0px; 
+    padding: 0px;
+}
+
+nav ul li{
+    flex-direction: row;
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li:hover{
+    background-color: #D8E0BB;
+}
+
+main{
+    background-color: #B6CEC7;
+    margin: 0;
+}
+
+main h2{
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}
+
+main div{
+    max-width: 60%;
+    margin: auto;
+    padding: 10px;
+}
+
+footer{
+    background-color: #7268A6;
+    margin: 0;
+}
+
+footer p{
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
