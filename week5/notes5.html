@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Week 4 notes</title> <!-- Title of the Page-->
+    <link rel="stylesheet" href="css/note5.css"> <!-- CSS Refernece Page-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <h1>WDD 330: Week 4</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://juarez18.github.io/wdd330/">Assignment Portal</a></li>
+            <li><a href="https://www.sitepoint.com/premium/books/javascript-novice-to-ninja-2nd-edition/read/12">Novice
+                    to Ninja Javascript</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Study Notes</h2>
+        <div>
+            <h3>
+                Debugging
+            </h3>
+            <p>
+                The first thing is understanding the 3 types of errors: System, Programmer and User error. System errors
+                represent a problem with the system or devices the program is interacting with. A program error is the
+                problem with the program syntax or logic or user error from the user breaking the program in some way.
+                An Exception is an error that returns a value the program can be used by the program to deal with the
+                error like referencing a variable that does not exist. Stack traces help find the origin of a problem
+                with a program. A warning is not a fatal issue to your program but it can be a problem when it runs and
+                is something that you should definitely take steps to resolve. You can use ‘use strict’ to declare in
+                functions so that you can keep good coding habits and catch more errors. You can use an If statement to
+                check that a feature exists and then call a function to use an API object.
+            </p>
+            <h5>
+                Alerts
+            </h5>
+            <p>Using Alerts are basic but are good for showing variables and stopping programs from running in the
+                middle of execution here’s an example. This function will add 4 + 6 and then divide by 2 we will check to see that the variable adds and divides correctly: </p>
+            <button type="button" onclick="testAlert()">Try an Alert</button>
+            <h5>
+                Console
+            </h5>
+            <p>Console is another way of logging events of variables although unlike alerts it doesn’t stop the
+                execution of a program here’s an example. This program will add 2 to i as long as it is less than 10 and we will log as i goes up:</p>
+            <button type="button" onclick="testConsole()">See a Console.log</button>
+            <h5>
+                Debugger
+            </h5>
+            <p>You can also use the debugger command in order to make a pause within most modern internet browsers
+                here’s an example:</p>
+            <button type="button" onclick="testdebug()">Try a debugger</button>
+            <p>Other types of things creating an error object these can be used to create custom error messages, you can
+                also use throw to create your own exception errors. This combines to a try, catch and finally block
+                which you can use to execute but also will not stop the program from running anyways. </p>
+        </div>
+        <div>
+            <h3>Testing</h3>
+            <p>Test-Driven development(TDD) is writing tests before any actual code this will help in development as it makes your code stronger and less likely to fail as you develop it. This is the workflow of TDD:</p>
+            <ol>
+                <li>Write tests.</li>
+                <li>Write code to pass the tests.</li>
+                <li>Refactor the code.</li>
+                <li>Test refactored code.</li>
+                <li>Write more tests for new features.</li>
+            </ol>
+            <p>There are many frameworks that can lighten the load of writing endless tests. One that is common is Jest this was created by Facebook and is easy to use in a variety of ways. </p>
+        </div>
+    </main>
+    <footer>
+        <p>
+            WDD 330 | Marcus Juarez | BYUI
+        </p>
+    </footer>
+</body>
+<script src="/week5/js/examples.js"></script> <!-- Java Script Refenence-->
+
+</html>
