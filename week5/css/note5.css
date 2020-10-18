@@ -1,1 +1,44 @@
 @import "https://juarez18.github.io/wdd330/week4/css/note4.css";
+
+main{
+    max-width: 75%;
+    margin: auto;
+}
+
+#content-1{
+    display: flex;
+    max-width: 100%;
+    padding: 0;
+    
+}
+
+#content-1 div{
+    border: 3px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    flex: 1;
+    background-color: antiquewhite;
+}
+
+#alerts{
+    
+}
+
+#content-1 h5{
+    text-align: center;
+}
+
+#content-1 .button{
+    border: none;
+    margin: 0;
+    padding: 10px;
+    max-width: 100%;
+
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}

@@ -36,31 +36,50 @@
                 functions so that you can keep good coding habits and catch more errors. You can use an If statement to
                 check that a feature exists and then call a function to use an API object.
             </p>
-            <h5>
-                Alerts
-            </h5>
-            <p>Using Alerts are basic but are good for showing variables and stopping programs from running in the
-                middle of execution here’s an example. This function will add 4 + 6 and then divide by 2 we will check to see that the variable adds and divides correctly: </p>
-            <button type="button" onclick="testAlert()">Try an Alert</button>
-            <h5>
-                Console
-            </h5>
-            <p>Console is another way of logging events of variables although unlike alerts it doesn’t stop the
-                execution of a program here’s an example. This program will add 2 to i as long as it is less than 10 and we will log as i goes up:</p>
-            <button type="button" onclick="testConsole()">See a Console.log</button>
-            <h5>
-                Debugger
-            </h5>
-            <p>You can also use the debugger command in order to make a pause within most modern internet browsers
-                here’s an example:</p>
-            <button type="button" onclick="testdebug()">Try a debugger</button>
+            <div id="content-1">
+                <div id="alerts">
+                    <h5>
+                        Alerts
+                    </h5>
+                    <p>Using Alerts are basic but are good for showing variables and stopping programs from running in
+                        the
+                        middle of execution here’s an example. This function will add 4 + 6 and then divide by 2 we will
+                        check to see that the variable adds and divides correctly: </p>
+                    <div class="button">
+                        <button type="button" onclick="testAlert()">Try an Alert</button>
+                    </div>
+                </div>
+                <div id="console">
+                    <h5>
+                        Console
+                    </h5>
+                    <p>Console is another way of logging events of variables although unlike alerts it doesn’t stop the
+                        execution of a program here’s an example. This program will add 2 to i as long as it is less
+                        than 10 and we will log as i goes up:</p>
+                    <div class="button">
+                        <button type="button" onclick="testConsole()">See a Console.log</button>
+                    </div>
+                </div>
+                <div id="debugger">
+                    <h5>
+                        Debugger
+                    </h5>
+                    <p>You can also use the debugger command in order to make a pause within most modern internet
+                        browsers
+                        here’s an example:</p>
+                    <div class="button">
+                        <button type="button" onclick="testdebug()">Try a debugger</button>
+                    </div>
+                </div>
+            </div>
             <p>Other types of things creating an error object these can be used to create custom error messages, you can
                 also use throw to create your own exception errors. This combines to a try, catch and finally block
                 which you can use to execute but also will not stop the program from running anyways. </p>
         </div>
         <div>
             <h3>Testing</h3>
-            <p>Test-Driven development(TDD) is writing tests before any actual code this will help in development as it makes your code stronger and less likely to fail as you develop it. This is the workflow of TDD:</p>
+            <p>Test-Driven development(TDD) is writing tests before any actual code this will help in development as it
+                makes your code stronger and less likely to fail as you develop it. This is the workflow of TDD:</p>
             <ol>
                 <li>Write tests.</li>
                 <li>Write code to pass the tests.</li>
@@ -68,7 +87,8 @@
                 <li>Test refactored code.</li>
                 <li>Write more tests for new features.</li>
             </ol>
-            <p>There are many frameworks that can lighten the load of writing endless tests. One that is common is Jest this was created by Facebook and is easy to use in a variety of ways. </p>
+            <p>There are many frameworks that can lighten the load of writing endless tests. One that is common is Jest
+                this was created by Facebook and is easy to use in a variety of ways. </p>
         </div>
     </main>
     <footer>
