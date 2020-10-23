@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>To Do Application</title> <!-- Title of the Page-->
+    <link rel="stylesheet" href="css/todo.css"> <!-- CSS Refernece Page-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <h1>To Do Application W06</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://juarez18.github.io/wdd330/">Assignment Portal</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="ToDoList">
+            <h2 id="header">To Do List</h2>
+            <span>
+                <div id="toDoListCounter">
+                </div>
+                <div>
+                    <button type="button" id="allBtn">View All</button>
+                    <button type="button" id="incBtn">Show Incomplete</button>
+                    <button type="button" id="comBtn">Show Completed</button>
+                </div>
+            </span>
+        </div>
+        <form>
+            <button type="button" id="resetBtn">Clear List</button>
+            <input id="item" type="text" placeholder="Add To List" required />
+            <button type="button" id="btnInsert">Add Item</button>
+        </form>
+         
+          
+  
+    </main>
+    <footer>
+        <p>
+            WDD 330 | Marcus Juarez | BYUI
+        </p>
+    </footer>
+</body>
+ <script src="js/makelist.js"></script>
+
+</html>

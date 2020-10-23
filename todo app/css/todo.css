@@ -1,0 +1,135 @@
+header h1{
+    text-align: center;
+    background-color:lightcyan;
+    padding: 15px;
+    margin: 0;
+}
+
+nav {
+    background-color: #86A3C3;
+    margin: 0;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0px; 
+    padding: 0px;
+}
+
+nav ul li{
+    flex-direction: row;
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+}
+
+nav ul li:hover{
+    background-color: #D8E0BB;
+}
+
+footer{
+    background-color: lightcyan;
+    border: 5px solid #86A3C3;
+    border-top: none;
+    margin: 0;
+}
+
+footer p{
+    text-align: center;
+    padding: 15px;
+    margin: 0;
+}
+
+#ToDoList{
+    display: flex;
+    flex-direction: column;
+    border: 3px solid black;
+    margin: auto;
+    max-width: 70%;
+    background-color: snow;
+}
+
+div section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: 5px;
+    max-width: 50%;
+    width: 50%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 1px solid navy;
+    background-color: mistyrose;
+    border-radius: 5px;
+}
+
+div section:hover {
+    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+div span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+    order: 2;
+}
+
+h2{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div span div{
+    margin: 10px;
+}
+
+button{
+    margin: 10px;
+    background-color: antiquewhite;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    color: grey;
+    padding: 10px;
+}
+
+button:hover {
+    box-shadow: 0 10px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+section input{
+    margin: 15px;
+    padding: 15px;
+}
+
+form input{
+    padding: 10px;
+    margin: 10px;
+
+}
+
+main{
+    background-color: lightsteelblue;
+    margin: 0;
+    padding: 10px;
+}
+
+#header{
+    width: 60%;
+    margin: auto;
+    border-bottom: 3px solid black;
+}
+
+#toDoListCounter{
+    font-weight: bold;
+}
