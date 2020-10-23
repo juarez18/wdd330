@@ -1,9 +1,13 @@
+//these constants grab references to the html document and set index for sections
+
 const form = document.querySelector('form');
-const div = document.querySelector('div');
+const div = document.querySelector('#actualList');
 const btnInsert = document.getElementById('btnInsert');
 const input = document.getElementById('item');
+const checkInput = input.value;
 let a = 0;
 
+//creates where the to do items will be stored
 let itemsArray = localStorage.getItem('items')
   ? JSON.parse(localStorage.getItem('items'))
   : []
@@ -11,6 +15,7 @@ let itemsArray = localStorage.getItem('items')
 localStorage.setItem('items', JSON.stringify(itemsArray))
 const data = JSON.parse(localStorage.getItem('items'))
 
+//function to create section each time an item is added
 const sectionMaker = (text) => {
     a++;
     const section = document.createElement('section');
@@ -29,25 +34,28 @@ const sectionMaker = (text) => {
     
   }
 
-
+//adds item to list when button is clicked and verifies content
 btnInsert.onclick = function addItem() {
-
-    if(item){
+    if(input.value){
     itemsArray.push(input.value)
     localStorage.setItem('items', JSON.stringify(itemsArray))
 
     sectionMaker(input.value);
     input.value = '';
+    showCounter();
+    location.reload();
     }
-  
+
 };
 
 data.forEach((item) => {
     sectionMaker(item)
   })
 
+//selects all checkboxs elements in the to do list
 document.querySelectorAll("input[name=checkbox]").forEach(checkbox => {
 
+//checks for when the checkboxes change status and updates class accordingly
 checkbox.addEventListener( 'change', function updateStatus() {
     const checkboxes = document.querySelectorAll("input[name=checkbox]");
     const completeSection = document.querySelectorAll("section");
@@ -65,7 +73,7 @@ checkbox.addEventListener( 'change', function updateStatus() {
 )
 })
 
-
+//shows how many tasks are currently on the list
 function showCounter(){
     const completeSection = document.querySelectorAll("section");
     var q = completeSection.length
@@ -74,6 +82,7 @@ function showCounter(){
 
 showCounter();
 
+//shows only incompleted tasks
 incBtn.onclick = function showinc(){
     const Tasks = document.querySelectorAll("section");
     for(let y = 0; y < Tasks.length; y++){
@@ -86,6 +95,7 @@ incBtn.onclick = function showinc(){
     }
 } 
 
+//shows only completed tasks
 comBtn.onclick = function showCom(){
     const Tasks = document.querySelectorAll("section");
 
@@ -99,6 +109,7 @@ comBtn.onclick = function showCom(){
     }
 } 
 
+//shows all tasks
 allBtn.onclick = function showAll(){
     const Tasks = document.querySelectorAll("section");
 
@@ -107,12 +118,13 @@ allBtn.onclick = function showAll(){
     }
 }
 
-resetBtn.addEventListener('click', function () {
-    localStorage.clear()
-    while (ul.firstChild) {
-      ul.removeChild(ul.firstChild)
+//clears all tasks from list
+resetBtn.addEventListener('click', function removeList(){
+    localStorage.clear();
+    while (div.firstChild) {
+      div.removeChild(div.firstChild)
     }
-
-    
+    itemsArray.length = 0;
+    showCounter()
     
   })
