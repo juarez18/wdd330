@@ -1,6 +1,6 @@
 header h1{
     text-align: center;
-    background-color: #7268A6;
+    background-color: lightcyan;
     padding: 15px;
     margin: 0;
 }
@@ -29,7 +29,7 @@ nav ul li:hover{
 }
 
 main{
-    background-color: #B6CEC7;
+    background-color: lightsteelblue;
     margin: 0;
 }
 
@@ -46,7 +46,7 @@ main div{
 }
 
 footer{
-    background-color: #7268A6;
+    background-color: lightcyan;
     margin: 0;
 }
 
