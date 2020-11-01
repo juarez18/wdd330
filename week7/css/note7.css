@@ -1,0 +1,13 @@
+@import "https://juarez18.github.io/wdd330/week5/css/note5.css";
+
+footer{
+    margin-top: 0;
+}
+
+p{
+    margin-bottom: 0;
+}
+
+main{
+    padding: 10px;
+}
