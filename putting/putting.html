@@ -1,59 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Week 4 notes</title> <!-- Title of the Page-->
-        <link rel="stylesheet" href="css/putting.css"> <!-- CSS Refernece Page-->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
 
-    <body>
-        <header>
-            <h1>Putting Practice Application</h1>
-        </header>
-        <nav>
-            <ul>
-                <li><a href="https://juarez18.github.io/wdd330/">Assignment Portal</a></li>
-            </ul>
-        </nav>
-        <main>
-            <h1>Putting Practice</h1>
-            <div id="putting-stats-display">
-                <h3>Putting Stats</h3>
-                <p>Total Putting Percentage:<span id="total-percentage"></span></p>
-                <p>Last 100 putts:<span id="last100"></span></p>
-                <p>Percentage from 10ft:<span id="10-percentage"></span></p>
-                <p>Percentage from 20ft:<span id="20-percentage"></span></p>
-                <p>Percentage from 30ft:<span id="30-percentage"></span></p>
-                <p>Percentage from Circle 2:<span id="c2-percentage"></span></p>
+<head>
+    <title>Week 4 notes</title> <!-- Title of the Page-->
+    <link rel="stylesheet" href="css/putting.css"> <!-- CSS Refernece Page-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <header>
+        <h1>Putting Practice Application</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="https://juarez18.github.io/wdd330/">Assignment Portal</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Let's Start Putting!</h1>
+        <div id="putting-stats-display">
+            <h3>Putting Stats</h3>
+            <p>Total Putting Percentage:<span id="total-percentage"></span></p>
+            <p>Last Round Putting: <span id="lastround">Not avaliable yet.</span></p>
+            <p>Percentage from 10ft:<span id="10-percentage"></span></p>
+            <p>Percentage from 20ft:<span id="20-percentage"></span></p>
+            <p>Percentage from 30ft:<span id="30-percentage"></span></p>
+            <p>Percentage from Circle 2:<span id="c2-percentage"></span></p>
+            <button type="button" id="reset-rounds">Reset Stats</button>
+        </div>
+        <div id="start-round-menu" class="start-round">
+            <h3>Start a Putting Round</h3>
+            <div id="distance-div">
+                <label for="putting-distance">Putting Distance:</label>
+                <select id="putting-distance">
+                    <option value="10ft">10 feet</option>
+                    <option value="20ft">20 feet</option>
+                    <option value="30ft">30 feet</option>
+                    <option value="C2">Circle 2 Putts</option>
+                </select>
             </div>
-            <div id="start-round-menu">
-                <h3>Start a Putting Round</h3>
-                <form>
-                    <label for ="putting-distance">Putting Distance</label>
-                    <select id="putting-distance">
-                        <option value="10ft">10 feet</option>
-                        <option value="20ft">20 feet</option>
-                        <option value="30ft">30 feet</option>
-                        <option value="circle2">Circle 2 Putts</option>
-                    </select>
-                    <label for="putting-number">Number of Putts</label>
-                    <input type="number" id="putting-number">
-                    <button type="button" id="start-round">Start Putting Round</button>
-                </form>
+            <div id="number-div">
+                <label for="putting-number">Number of Putts:</label>
+                <input type="number" id="putting-number">
             </div>
-            <div id="active-putting" class="hidden">
+            <button type="button" id="start-round">Start Putting Round</button>
+        </div>
+        <div id="active-putting" class="hidden">
+            <div id="current-stats">
                 <p>Current Putt: <span id="current"></span> / <span id="total-number"></span></p>
+                <p>Current 10: <span id="current10"></span></p>
+                <p>Last 10: <span id="last10"></span></p>
+            </div>
+            <div id="input-buttons">
                 <button type="button" id="made-putt">Made</button>
                 <button type="button" id="miss-putt">Miss</button>
-                <button type="button" id="end-round">End Round</button>
             </div>
-        </main>
-        <footer>
-            <p>
-                WDD 330 | Marcus Juarez | BYUI 
-            </p>
-        </footer>
-    </body>
-    <script src="js/putting.js"></script> <!-- Java Script Refenence-->
+            <div id="end-round-button">
+            <button type="button" id="end-round">End Round</button>
+        </div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            WDD 330 | Marcus Juarez | BYUI
+        </p>
+    </footer>
+</body>
+<script src="js/putting.js"></script> <!-- Java Script Refenence-->
+
 </html>

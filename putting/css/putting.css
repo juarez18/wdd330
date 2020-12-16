@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Poppins&display=swap');
+
 header h1{
     text-align: center;
-    background-color: lightcyan;
+    background-color: green;
     padding: 15px;
     margin: 0;
 }
 
 nav {
-    background-color: #86A3C3;
+    background-color: lemonchiffon;
     margin: 0;
 }
+
 nav ul{
     list-style-type: none;
     display: flex;
@@ -25,11 +28,13 @@ nav ul li{
 }
 
 nav ul li:hover{
-    background-color: #D8E0BB;
+    background-color: rgb(217, 255, 0);
+    transition-duration: 0.5s;
+    transition-delay: 100ms;
 }
 
 main{
-    background-color: lightsteelblue;
+    background-color: darkseagreen;
     max-width: 75%;
     margin: auto;
     padding: 15px;
@@ -43,7 +48,7 @@ main h2{
 
 
 footer{
-    background-color: lightcyan;
+    background-color: green;
     margin: 0;
 }
 
@@ -55,4 +60,114 @@ footer p{
 
 .hidden{
     display: none;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Crimson Text', sans-serif;
+    text-align: center;
+}
+
+#putting-stats-display{
+    border: 5px ridge lightslategray;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: lightyellow;
+    text-align: center;
+    margin: 0px 30px 5px 30px
+}
+
+#putting-stats-display h3{
+    font-size: 24px;
+    border-bottom:3px solid lightslategray;
+    margin: 5px 160px 3px 160px
+}
+
+#putting-stats-display button{
+    padding: 10px 60px 10px 60px;
+    background-color: yellow;
+}
+
+main h1{
+    text-align: center;
+}
+
+.start-round{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#start-round-menu div{
+    padding: 0px 10px 10px 0px;
+    margin: 10px;
+}
+
+#start-round-menu div input , select{
+    padding: 5px;
+    width: 150px;
+    border-radius: 5px;
+}
+
+#start-round-menu button{
+    padding: 10px 60px 10px 60px;
+    background-color: yellow;
+}
+
+#start-round-menu{
+    border: 5px ridge lightslategray;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: lightyellow;
+    text-align: center;
+    margin: 20px 30px 5px 30px
+}
+
+#start-round-menu h3{
+    padding: 0px 30px 0px 30px;
+    font-size: 24px;
+    border-bottom:3px solid lightslategray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.putting-session #current-stats{
+    border: 5px ridge lightslategray;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: lightyellow;
+    text-align: center;
+    margin: 20px 15% 5px 15%
+}
+
+#made-putt , #miss-putt{
+    padding: 50px 50px 50px 50px
+}
+
+#made-putt{
+    background-color: rgb(161, 161, 255);
+    margin-right: 20px
+}
+
+#miss-putt{
+    background-color: rgb(255, 161, 161);
+}
+
+#input-buttons{
+    width: 300px;
+    margin: 20px auto 20px auto;
+}
+
+#end-round{
+    padding: 10px 60px 10px 60px;
+    background-color: yellow;
+}
+
+#end-round-button{
+    width: 187px;
+    margin: auto;
 }
