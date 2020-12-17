@@ -1,0 +1,70 @@
+  
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+main {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.hidden {
+  display: none;
+}
+
+
+#detailsbox {
+  flex: 1 0 15em;
+  padding: 1em;
+  text-align: center;
+  border: 2px solid;
+}
+
+#detailsbox dl {
+  border: 1px solid;
+  text-align: left;
+}
+
+#shiplist {
+  /* display: flex; */
+  flex-flow: row wrap;
+  list-style-type: none;
+}
+
+
+
+#shiplist tr {
+  border: 3px grey solid;
+  padding: 0.5em;
+  height: 44px;
+}
+
+
+#shiplist thead {
+    background-color: lightgray;
+  }
+
+#shiplist tr:nth-child(even) {
+  background-color: lemonchiffon;
+}
+
+#shiplist tbody tr:nth-child(odd) {
+    background-color: rgb(200, 222, 230);
+  }
+
+#shiplist tr:hover {
+  background-color: bisque;
+  text-decoration: underline;
+}
+
+button{
+    background-color: rgb(109, 212, 243);
+    padding: 5px;
+    margin: 10px 140px 0px 30px;
+}
+
+td{
+    padding: 5px;
+    text-align: center;
+}

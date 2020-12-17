@@ -69,8 +69,9 @@ resetBtn.onclick = function resetStorage() {
 endBtn.onclick = function endround() {
     lastRound.textContent = c + " out of " + a + " were made from " + distance + "!"
     changeDisplay()
-    a = 0;
     c = 0;
+    a = 0;
+    b = 0;
     calcStats()
     current10.textContent = " "
     last10.textContent = " "
